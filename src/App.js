@@ -1,13 +1,19 @@
 import './App.css';
 import Navbar from './components/Navbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Product from './components/Product';
+import { Switch, Route } from 'react-router-dom';
+//import ProductList from './components/ProductList';
+import Details from './components/Details';
 
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
-      Houston we have a problem
-      <Product></Product>
+      <Route path="/" component={Navbar}/>
+      <Switch>
+        <Route exact path="/" component={Product}/>
+        <Route path="/" component={Details}/>
+      </Switch>
     </div>
   );
 }
