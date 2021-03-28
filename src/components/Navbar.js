@@ -1,4 +1,5 @@
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {Link} from 'react-router-dom';
 import {Nav,Navbar} from 'react-bootstrap';
 import {ProductConsumer} from '../contextApi';
