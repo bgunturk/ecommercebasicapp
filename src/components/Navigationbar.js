@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import {Nav,Navbar} from 'react-bootstrap';
 import {ProductConsumer} from '../contextApi';
 
-export default class Navbar extends Component {
+export default class Navigationbar extends Component {
     render() {
     return (
         <div>

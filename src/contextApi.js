@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import {dataData, dataDetail} from './Data'
 
 class ProductProvider extends Component {
     state ={
-        products: dataProducts,
-        detailProduct : prodInDetails,
+        products: dataData,
+        detailProduct : dataDetail,
         Cart: [],
         CartSubtotal : 0
     } 
@@ -67,6 +68,9 @@ class ProductProvider extends Component {
             return { product: tempProduct, Cart: [this.state.Cart, product]}
         })
     } 
+
+
+    removeItem = (id) => {}
 
     render(){
         return (
