@@ -1,5 +1,5 @@
-import './App.css';
-import Navbar from './components/Navbar';
+import './index.css';
+import Navbar from './components/Navigationbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Product from './components/Product';
 import { Switch, Route } from 'react-router-dom';

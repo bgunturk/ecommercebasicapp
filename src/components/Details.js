@@ -2,13 +2,14 @@ import React, { Component } from 'react'
 import Product from './Product'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button, Container, Col, Row} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
 export default class Details extends Component {
     render() {
         return (
             <Product.Consumer>
                 {(value) => {
-                    const {id, title, img, price, info, inCart, company} = value.detailProduct;
+                    const {id, title, img, price, info, inCart, section} = value.detailProduct;
                     return (
                         <>
                         <div className="container">
